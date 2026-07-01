@@ -4241,11 +4241,11 @@ The "example" for each selected pattern must be a NEW sentence directly related 
         });
 
         // --- API & ERROR HANDLING ---
-        const API_URL = 'https://gen.pollinations.ai/v1/chat/completions';
-        const API_KEY = 'sk_svDIS85ASPKBX9Fu8JrCEHY5TWtVm6Sq';
+        const API_URL = 'https://hugo-api-v1.vercel.app/api/v1/chat/completions';
+        const API_KEY = 'eng';
         // MODELS (Section 3): Write/Generate tools — prioritise openai-fast with retry.
         // FALLBACK_MODELS (Section 4): Vocab tools — broader list via separate API key.
-        const MODELS  = ['openai-fast', 'gemini-search', 'openai-fast', 'openai']; // openai-fast repeated for extra retry
+        const MODELS  = ['gpt-oss-120b']; // openai-fast repeated for extra retry
 
         /* Call AI with model fallback (mirrors index.html pattern) */
         async function callAI(messages, options = {}, modelIndex = 0) {
@@ -4573,9 +4573,9 @@ Before finalizing, self-review to ensure all five '###' sections are present and
         // EduGenius Vocabulary Tools – AI Logic
         // ============================================================
 
-        const POLLINATIONS_API_KEY = 'sk_dk6t4GEymji9dVR9jPau4bB9RJYJ0JbP';
-        const POLLINATIONS_API_URL = 'https://gen.pollinations.ai/v1/chat/completions';
-        const FALLBACK_MODELS = ['gemini-search', 'gemini-fast', 'glm', 'openai-fast', 'openai', 'deepseek'];
+        const POLLINATIONS_API_KEY = 'eng';
+        const POLLINATIONS_API_URL = 'https://hugo-api-v1.vercel.app/api/v1/chat/completions';
+        const FALLBACK_MODELS = ['gpt-oss-120b'];
 
         // ---- Helpers ----
         async function callAI(prompt, useJson = false) {
