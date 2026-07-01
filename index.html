@@ -2862,8 +2862,8 @@ html, body {
            onclick="showPanel('panel-grammar'); return false;" href="#">Grammar Check</a>
         <a class="nav-item" data-panel="panel-enhancer"
            onclick="showPanel('panel-enhancer'); return false;" href="#">Text Enhancer</a>
-        <!-- Change from showPanel to a direct link -->
-        <a class="nav-item" href="https://gemini.google.com/gem/1ej5DXg5l-wTo6iz7el4Kf8DFtdrq62vB?usp=sharing" target="_blank" rel="noopener noreferrer">OCR</a>
+        <a class="nav-item" data-panel="panel-ocr"
+           onclick="showPanel('panel-ocr'); return false;" href="#">OCR</a>
       </div>
       <div class="nav-section">
         <div class="nav-section-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="0.85em" height="0.85em" style="vertical-align:middle;margin-right:0.3em" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Learn</div>
@@ -2933,13 +2933,12 @@ html, body {
             <p class="home-card-desc">Elevate your vocabulary, sentence variety, and overall writing flow automatically.</p>
             <span class="home-card-arrow">Open &rsaquo;</span>
           </div>
-          <!-- Remove data-panel="panel-ocr" and add the onclick below -->
-<div class="home-card" onclick="window.open('https://gemini.google.com/gem/1ej5DXg5l-wTo6iz7el4Kf8DFtdrq62vB?usp=sharing', '_blank')" role="button" tabindex="0">
-    <div class="home-card-icon">...</div>
-    <h3 class="home-card-title">OCR</h3>
-    <p class="home-card-desc">...</p>
-    <span class="home-card-arrow">Open &rsaquo;</span>
-</div>
+          <div class="home-card" data-panel="panel-ocr" role="button" tabindex="0">
+            <div class="home-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="1.6rem" height="1.6rem" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+            <h3 class="home-card-title">OCR</h3>
+            <p class="home-card-desc">Upload an image of any text, crop the area, and extract it as editable text instantly.</p>
+            <span class="home-card-arrow">Open &rsaquo;</span>
+          </div>
         </div>
 
         <!-- Learn section -->
@@ -3404,8 +3403,7 @@ html, body {
     <a class="mobile-nav-link" data-panel="panel-planner" href="#">Planner</a>
     <a class="mobile-nav-link" data-panel="panel-grammar" href="#">Grammar Check</a>
     <a class="mobile-nav-link" data-panel="panel-enhancer" href="#">Text Enhancer</a>
-    <!-- Remove data-panel and change the href -->
-<a class="mobile-nav-link" href="https://gemini.google.com/gem/1ej5DXg5l-wTo6iz7el4Kf8DFtdrq62vB?usp=sharing" target="_blank" rel="noopener noreferrer">OCR</a>
+    <a class="mobile-nav-link" data-panel="panel-ocr" href="#">OCR</a>
     <div class="mobile-nav-section-label">Learn</div>
     <a class="mobile-nav-link" data-panel="panel-vocab" href="#">Vocabulary Generator</a>
     <a class="mobile-nav-link" data-panel="panel-quiz" href="#">Vocabulary Quiz</a>
